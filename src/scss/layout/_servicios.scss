@@ -1,0 +1,78 @@
+section {
+  .services {
+    color: $black2;
+  }
+
+  .subtitle {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .subtitle--modifier {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .beneficios {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin: auto 0;
+    p {
+      color: $dorado2;
+      text-align: center;
+    }
+    @include telefono {
+      display: block;
+    }
+    @include tablet {
+      width: auto;
+      display: block;
+      margin: 15px auto;
+    }
+  }
+}
+
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  @include desktop {
+    justify-content: space-evenly;
+  }
+  .card {
+    @extend .card;
+    img {
+      width: 100%;
+      object-fit: cover;
+      text-align: center;
+      @include telefono {
+        width: 95%;
+        margin: 25px;
+      }
+      @include tablet {
+        margin-bottom: 40px;
+        width: 100%;
+      }
+    }
+  }
+  .cards__text {
+    @extend .cards__text;
+  }
+  .card__list {
+    @extend .card__list;
+  }
+  .card__title {
+    @extend .card__title;
+  }
+  .card__copy {
+    @extend .card__copy;
+  }
+  .card__button {
+    @extend .card__button;
+    &:hover {
+      color: $blanco;
+    }
+  }
+}

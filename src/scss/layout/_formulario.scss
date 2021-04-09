@@ -1,0 +1,141 @@
+header {
+  background-image: linear-gradient(
+    to bottom,
+    #30353b,
+    #2a2e34,
+    #25282d,
+    #1f2126,
+    #1a1b1f
+  );
+  .form {
+    .formulario {
+      margin: 0 auto;
+      width: 800px;
+      height: 100vh;
+      border: none;
+      border-radius: 4px;
+      background-color: $black1;
+      @include telefono {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        border: none;
+        border-radius: 4px;
+        background-color: $black1;
+      }
+      @include tablet {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        border: none;
+        border-radius: 4px;
+        background-color: $black1;
+      }
+      @include desktop {
+        width: auto;
+      }
+      h2 {
+        color: $dorado1;
+        text-align: center;
+        margin: 20px 0;
+        padding: 20px;
+        @include telefono {
+          h2 {
+            color: $dorado1;
+            text-align: center;
+            margin: 10px auto;
+            padding: 20px;
+          }
+        }
+        @include tablet {
+          h2 {
+            color: $dorado1;
+            text-align: center;
+            margin: 10px auto;
+            padding: 20px;
+          }
+        }
+      }
+      label {
+        text-align: center;
+        color: $dorado2;
+        width: 100%;
+      }
+      input,
+      textarea {
+        display: flex;
+        text-align: center;
+        width: 90%;
+        padding: 18px;
+        border-radius: 2px;
+        border: none;
+        margin: 15px auto;
+        font-size: 18px;
+        @include telefono {
+          input,
+          textarea {
+            display: flex;
+            text-align: center;
+            width: 95%;
+            padding: 15px 40px;
+            border-radius: 2px;
+            border: none;
+            margin: 5px auto;
+            font-size: 18px;
+          }
+        }
+        @include tablet {
+          input,
+          textarea {
+            display: flex;
+            text-align: center;
+            width: 90%;
+            padding: 15px 40px;
+            border-radius: 2px;
+            border: none;
+            margin: 10px auto;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .btn-grad {
+      background-image: linear-gradient(
+        to right,
+        #f4bd76 0%,
+        #f6cd8f 51%,
+        #f4bd76 100%
+      );
+    }
+
+    .btn-grad {
+      display: flex;
+      margin: 25px auto;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.6s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 0px $blanco;
+      border-radius: 10px;
+      border: 1px solid $dorado1;
+      display: block;
+      @include telefono {
+        .btn-grad {
+          margin: 0 auto;
+        }
+      }
+      @include tablet {
+        margin-left: 0 25px;
+      }
+      &:hover {
+        background-position: right center;
+        color: $blanco;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

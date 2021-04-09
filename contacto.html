@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="contactate cona ARM-tech y sacate todas tus dudas"
+    />
+    <meta name="keywords" content="contacto,dudas,formulario,datos" />
+    <title>Contactanos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav__hero">
+        <div class="container nav__container">
+          <div class="logo">
+            <h2 class="logo__name">
+              <span class="point">ARM</span>-Tech<span class="point">.</span>
+            </h2>
+          </div>
+          <div class="links">
+            <a href="index.html" class="link">Inicio</a>
+            <a href="servicios.html" class="link">Servicios</a>
+            <a href="productos.html" class="link">Productos</a>
+            <a href="nosotros.html" class="link">Nosotros</a>
+            <a href="contacto.html" class="link link--active">Contacto</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="form container">
+        <form class="formulario">
+          <h2 class="formulario__titulo">Contacto</h2>
+
+          <input
+            name="nombre"
+            type="text"
+            placeholder="Nombre"
+            maxlength="30"
+            pattern="[a-zA-Z0-9]+"
+            required
+            autofocus
+          />
+
+          <input
+            name="Apellido"
+            type="text"
+            placeholder="Apellido"
+            maxlength="30"
+            pattern="[a-zA-Z0-9]+"
+            required
+            autofocus
+          />
+
+          <input
+            name="pais"
+            type="text"
+            placeholder="País"
+            maxlength="30"
+            pattern="[a-zA-Z0-9]+"
+            required
+            autofocus
+          />
+
+          <input
+            name="email"
+            type="email"
+            placeholder="Correo electrónico"
+            required
+          />
+
+          <textarea
+            name="consulta"
+            placeholder="¿Cuál es el motivo de tu consulta?"
+            rows="6"
+            required
+          ></textarea>
+          <button id="enviar" name="enviar" type="submit" class="btn-grad">
+            Enviar
+          </button>
+        </form>
+      </section>
+    </header>
+
+    <footer class="footer">
+      <div class="container footer__caption">
+        <section class="download">
+          <div class="footer__copy">
+            <p class="copyright">&copy; 2021 Todos los derechos reservados</p>
+            <a
+              href="#"
+              class="politica__privacidad politica__privacidad--margin"
+              >Politica de privacidad</a
+            >
+            <a href="#" class="politica__privacidad">Terminos y condiciones</a>
+          </div>
+        </section>
+        <section class="get-email">
+          <div class="socialmedia">
+            <p class="socialmedia__legend">Siguenos en:</p>
+            <i class="socialmedia__icon bx bxl-facebook-circle"></i>
+            <i class="socialmedia__icon bx bxl-linkedin-square"></i>
+            <i class="socialmedia__icon bx bxl-twitter"></i>
+            <i class="socialmedia__icon bx bxl-instagram"></i>
+            <i class="socialmedia__icon bx bxl-github"></i>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

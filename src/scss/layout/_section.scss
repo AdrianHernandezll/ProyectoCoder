@@ -1,0 +1,172 @@
+.container-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  @include tablet {
+    justify-content: space-evenly;
+  }
+  .card2 {
+    @extend .card;
+    @include desktop {
+      margin: 15px auto;
+    }
+  }
+  .point {
+    color: $dorado1;
+  }
+}
+
+.background {
+  width: 68%;
+  height: 290px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 60px;
+  @include telefono {
+    width: 95%;
+  }
+  @include tablet {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.background__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.background__text {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  left: 15px;
+  color: $blanco;
+}
+.background__title {
+  font-size: 24px;
+  margin-bottom: 4px;
+  @include tablet {
+    font-size: 21px;
+  }
+}
+
+.email {
+  .subtitle {
+    font-size: 42px;
+    text-align: center;
+  }
+  .point {
+    @extend .point;
+  }
+  .copy__section {
+    @extend .copy__section;
+  }
+  .copy__section--modifier {
+    @extend .copy__section--modifier;
+  }
+  .check {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    @include telefono {
+      width: 100%;
+    }
+    .check__item {
+      width: 30%;
+      padding-right: 10px;
+      display: flex;
+      border-right: 2px solid $black2;
+      @include telefono {
+        border: none;
+        padding: none;
+        justify-content: flex-start;
+        margin: 10px auto;
+      }
+      @include desktop {
+        width: 45%;
+        margin-bottom: 35px;
+      }
+    }
+    .bx {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 10px auto;
+    }
+    .bx-check {
+      background: linear-gradient(180deg, $black2 0%, $black1 100%);
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      margin-right: 20px;
+      color: $blanco;
+      border-radius: 50%;
+      font-size: 40px;
+    }
+    .check__number {
+      font-weight: $bold;
+      color: $black1;
+    }
+    .check__copy {
+      font-weight: $delgada;
+      color: $black1;
+    }
+  }
+  .newsletter {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    font-family: inherit;
+    position: relative;
+    border-radius: 6px;
+    @include telefono {
+      width: 100%;
+      display: none;
+    }
+    @include desktop {
+      width: 80%;
+    }
+    .newsletter--modifier {
+      margin: 0;
+      width: 80%;
+      @include telefono {
+        display: block;
+      }
+    }
+  }
+  .newsletter__input {
+    width: 100%;
+    height: 100%;
+    padding: 22px 10px;
+    outline: none;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid $black2;
+  }
+  .newsletter__submit {
+    position: absolute;
+    right: -10px;
+    top: 10%;
+    height: 80%;
+    background: linear-gradient(180deg, $black2 0%, $black1 100%);
+    color: $blanco;
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: $bold;
+    cursor: pointer;
+    &:hover {
+      color: $dorado1;
+    }
+  }
+}

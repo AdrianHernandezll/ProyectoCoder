@@ -1,0 +1,58 @@
+.nosotros__contenedor {
+  width: 100%;
+}
+
+.nosotros__contenido {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  float: right;
+  margin: 25px auto;
+  @include telefono {
+    display: block;
+    clear: both;
+  }
+  @include tablet {
+    display: block;
+    width: 100%;
+  }
+
+  img {
+    width: 45%;
+    @include telefono {
+      width: 100%;
+      clear: both;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include desktop {
+      width: 100%;
+      margin: 0 auto;
+      text-align: start;
+    }
+  }
+  p {
+    width: 54%;
+    font-size: 25px;
+    @include telefono {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+      text-align: center;
+    }
+    @include desktop {
+      margin: 0 auto;
+      font-size: 25px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  span {
+    width: 100%;
+    text-align: end;
+  }
+}
