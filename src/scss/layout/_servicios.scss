@@ -36,7 +36,6 @@ section {
 .container-cards {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   @include desktop {
     justify-content: space-evenly;
