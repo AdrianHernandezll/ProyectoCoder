@@ -154,6 +154,10 @@ header {
     text-decoration: none;
     font-weight: $delgada;
     padding: 10px;
+    @include telefono {
+      display: block;
+      width: 100%;
+    }
     @include tablet {
       padding-bottom: 10px;
       text-align: center;
@@ -176,15 +180,37 @@ header {
       :focus {
         background-size: 100% 2px;
       }
+      @include telefono {
+        display: block;
+        width: 90%;
+        margin: 35px auto;
+        background-color: $dorado2;
+        border-radius: 5px;
+        color: $black1;
+        font-weight: $bold;
+        padding-top: 10px;
+        &:hover {
+          color: $blanco;
+        }
+      }
     }
     &:hover {
       color: $dorado1;
+      @include telefono {
+        color: $dorado2;
+      }
     }
     .link--active {
       color: $dorado1;
       font-weight: $bold;
+      @include telefono {
+        color: $black1;
+      }
       &:hover {
         color: $blanco;
+        @include telefono {
+          background-color: $dorado2;
+        }
       }
     }
   }
