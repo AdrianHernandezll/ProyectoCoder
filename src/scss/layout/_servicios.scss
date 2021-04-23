@@ -22,6 +22,7 @@ section {
       color: $blanco;
       text-align: center;
     }
+    //Media Querys
     @include telefono {
       display: block;
     }
@@ -32,7 +33,7 @@ section {
     }
   }
 }
-
+//Cards van aqui
 .container-cards {
   display: flex;
   justify-content: space-between;
@@ -56,6 +57,7 @@ section {
       }
     }
   }
+  //Heredan las clases de Globales
   .cards__text {
     @extend .cards__text;
   }
